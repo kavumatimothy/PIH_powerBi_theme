@@ -2,14 +2,17 @@
     "name": "Full theme",
     "$schema": "reportThemeSchema-2.114.json",
     "dataColors":[
-        "#FF9800",
-        "#FED29F",
-        "#E15A25",
-        "#7B1317",
-        "#22285B",
-        "#A37762",
-        "#9C4A23",
-        "#60381D"
+      "#7B1317",
+      "#60381D",
+      "#9C4A23",
+      "#A37762",
+      "#FED29F",
+      "#E0CFC6",
+      "#F2BEC5",
+      "#22285B",
+      "#134B91",
+      "#943147",
+      "#547CB5"
         ],
     "visualStyles":
         {
@@ -79,16 +82,16 @@
                             "transparency": 0
                             }],
                 "visualTooltip":[{
-                        "titleFontColor":{"solid":{"color":"#D7CACA"}},
-                        "valueFontColor":{"solid":{"color":"#FFFFFF"}},
+                        "titleFontColor":{"solid":{"color":"#000000"}},
+                        "valueFontColor":{"solid":{"color":"#000000"}},
                         "background":{"solid":{"color":"#938888"}}
                         }],
                 "title":    [{
                             "show": true,
-                            "text": "Visual Title",
-                            "fontColor": {"solid": {"color": "#ffffff"}},
+                            "fontColor": {"solid": {"color": "#000000"}},
                             "alignment": "center",
                             "fontSize": 12,
+                            "titleBold":true,
                             "fontFace": "Arial Black"
                             }],
                 "lockAspect": [{ 
@@ -99,7 +102,7 @@
                             "color": {"solid": {"color": "#F5F4F0"}}
                             }],
                 "dropShadow": 	[{
-                            "show": true,
+                            "show": false,
                             "color": {"solid": {"color": "#E8E8E8"}},
                             "position":"Outer",
                             "preset":"TopLeft"
@@ -133,8 +136,8 @@
                             "fontFamily": "Arial",
                             "fontSize": 12,
                             "showAxisTitle": true,
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
+                            "axisType":"Categorical",
                             "titleFontFamily": "Arial",
                             "titleColor": {"solid": {"color": "#000000"}},
                             "gridLineShow": true,
@@ -150,7 +153,6 @@
                             "fontFamily": "Arial",
                             "fontSize": 12,
                             "showAxisTitle": true,
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "titleColor": {"solid": {"color": "#000000"}},
@@ -162,10 +164,10 @@
                         }],
                 "labels": [{
                             "show": true,
-                            "labelPosition": "InsideEnd",
-                            "color": {"solid": {"color": "#ffffff"}},
+                            "labelPosition": "outside",
+                            "color": {"solid": {"color": "#000000"}},
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#E8E8E8"}},
                             "backgroundTransparency": 0
@@ -175,9 +177,8 @@
                           }],
                 "legend": [{
                             "show": true,
-                            "position": "Bottom",
+                            "position": "BottomCenter",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12												
@@ -190,7 +191,6 @@
                 "myTextboxNotes" : "Currently you can add notes like this for visuals",
                 "title":    [{
                             "show": false,
-                            "text": "Textbox Title",
                             "titleWrap": false,
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#FF9800"}},
@@ -211,15 +211,14 @@
                             "radius": 5
                             }],
                 "dropShadow":   [{
-                            "show": true,
+                            "show": false,
                             "color": {"solid": {"color": "#E8E8E8"}},
                             "position":"Inner",
                             "preset":"Top"
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -254,7 +253,6 @@
                 "title":    [{
                             "show": false,
                             "wordwrap": [{"show": true}],
-                            "text": "Image Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
@@ -306,8 +304,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -334,7 +331,6 @@
                 "title":    [{
                             "show": false,
                             "wordwrap": [{"show": true}],
-                            "text": "Shape Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
@@ -386,8 +382,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -416,11 +411,10 @@
                             }],
                 "title":    [{
                             "show": true,
-                            "text": "Card Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],
                 "background": 	[{
@@ -443,8 +437,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -478,7 +471,7 @@
                 {											
                 "dataLabels": [{
                             "color": {"solid": {"color": "#22285B"}},
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],
                 "categoryLabels": 	[{
@@ -504,11 +497,10 @@
                             }],
                 "title":    [{
                             "show": true,
-                            "text": "Mulit-Row Card Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],
                 "background": 	[{
@@ -525,8 +517,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -585,11 +576,11 @@
                             "bold": true,
                             "alignment": "Left",
                             "wordWrap": true
-                          }],					  
+                          }],	
                 "values": [{
-                            "fontColorPrimary": {"solid": {"color": "#949494"}},
+                            "fontColorPrimary": {"solid": {"color": "#000000"}},
                             "backColorPrimary": {"solid": {"color": "#E8E8E8"}},
-                            "fontColorSecondary": {"solid": {"color": "#808080"}},
+                            "fontColorSecondary": {"solid": {"color": "#000000"}},
                             "backColorSecondary": {"solid": {"color": "#D5D5D5"}},
                             "outline": "Frame",
                             "urlIcon": true,
@@ -600,15 +591,14 @@
                 "total":    [{
                             "totals": true,
                             "label": "TOTAL",
-                            "fontColor": {"solid": {"color": "#000000"}},
-                            "backColor": {"solid": {"color": "#22285B"}},
+                            "fontColor": {"solid": {"color": "#ffffff"}},
+                            "backColor": {"solid": {"color": "#FF9800"}},
                             "outline": "Frame",
                             "fontFamily": "Arial",
                             "fontSize": 12
                           }],
                 "title":    [{
                             "show": false,
-                            "text": "Table Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center"
@@ -626,15 +616,14 @@
                             "radius": 5
                             }],
                 "dropShadow": 	[{
-                            "show": true,
+                            "show": false,
                             "color": {"solid": {"color": "#E8E8E8"}},
                             "position":"Outer",
                             "preset":"TopLeft"
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -686,7 +675,7 @@
                             "outline": "TopBottom",
                             "autoSizeColumnWidth": true,
                             "fontFamily": "Arial",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "titleBold":true,
                             "bold": true,
                             "alignment": "Left",
@@ -730,7 +719,7 @@
                             "fontColor": {"solid": {"color": "#FFFFFF"}},
                             "fontFamily": "Arial",
                             "backColor": {"solid": {"color": "#FF9800"}},
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "applyToHeaders": false,
                             "rowSubTotalPosition": "Bottom",
                             "perRowLevel": false,
@@ -746,7 +735,6 @@
                           }],
                 "title":    [{
                             "show": false,
-                            "text": "Matrix Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center"
@@ -771,8 +759,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -808,7 +795,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12												
@@ -825,7 +811,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -842,7 +827,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
@@ -888,11 +872,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Stacked Bar Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -909,8 +892,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -946,7 +928,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12										
@@ -959,11 +940,10 @@
                             "preferredCategoryWidth": 20,
                             "maxMarginFactor": 25,
                             "innerPadding": 15,
-                            "concatenateLabels": true,
+                            "concatenateLabels": false,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -980,7 +960,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
@@ -1004,7 +983,7 @@
                             "labelOverflow": true,
                             "labelOrientation": 0,
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#949494"}},
                             "backgroundTransparency": 0
@@ -1027,11 +1006,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Stacked Column Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -1048,8 +1026,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -1085,7 +1062,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12												
@@ -1102,7 +1078,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -1119,7 +1094,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
@@ -1152,11 +1126,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Clustered Bar Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -1173,8 +1146,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -1209,7 +1181,7 @@
                 "legend": [{
                             "show": true,
                             "position": "BottomCenter",
-                            "showTitle": false,
+                            "showTitle": true,
                             "labelColor":{"solid": {"color": "#000000"}},
                             "legendColor": {"solid": {"color": "#000000"}},
                             "fontFamily": "Arial",
@@ -1221,11 +1193,13 @@
                             "color": {"solid": {"color": "#000000"}},
                             "fontSize": 12,
                             "fontFamily": "Arial",
+                            "fontFace":"Arial Black",
                             "bold": true,
+                            "axisType":"Categorical",
                             "preferredCategoryWidth": 20,
                             "maxMarginFactor": 25,
                             "innerPadding": 15,
-                            "concatenateLabels": true,
+                            "concatenateLabels": false,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#22285B"}},
@@ -1242,6 +1216,8 @@
                             "titleColor": {"solid": {"color": "#22285B"}},
                             "fontSize": 12,
                             "bold": true,
+                            "labelDisplayUnits": 1,
+                            "fontFace":"Arial Black",
                             "fontFamily": "Arial",
                             "labelPrecision": 0,
                             "": 0,
@@ -1266,6 +1242,7 @@
                             "color": {"solid": {"color": "#22285B"}},
                             "labelPrecision": 0,
                             "labelOrientation": 1,
+                            "labelDisplayUnits": 1,
                             "labelPosition": "OutsideEnd",
                             "labelOverflow": true,
                             "fontFamily": "Arial",
@@ -1280,12 +1257,12 @@
                             "scaling": "Fill"
                           }],
                 "title":    [{
-                            "show": false,
-                            "text": "Clustered Column Chart Title",
-                            "fontColor": {"solid": {"color": "#ffffff"}},
+                            "show": true,
+                            "fontColor": {"solid": {"color": "#000000"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "titlebold":true,
+                            "bold": true,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -1302,8 +1279,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -1339,7 +1315,6 @@
                             "show": true,
                             "position": "Bottom",
                             "showTitle": false,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12												
@@ -1356,7 +1331,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -1372,7 +1346,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
@@ -1393,7 +1366,7 @@
                             "labelPosition": "OutsideEnd",
                             "labelOverflow": true,
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#949494"}},
                             "backgroundTransparency": 0
@@ -1404,11 +1377,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "100% Stacked Bar Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -1425,8 +1397,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -1462,7 +1433,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12												
@@ -1475,11 +1445,10 @@
                             "preferredCategoryWidth": 20,
                             "maxMarginFactor": 25,
                             "innerPadding": 15,
-                            "concatenateLabels": true,
+                            "concatenateLabels": false,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -1496,7 +1465,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
@@ -1518,7 +1486,7 @@
                             "labelPosition": "InsideEnd",
                             "labelOverflow": true,
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#949494"}},
                             "backgroundTransparency": 0
@@ -1529,11 +1497,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "100% Stacked Column Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -1550,8 +1517,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -1587,7 +1553,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12,
@@ -1603,11 +1568,10 @@
                             "fontFamily": "Arial",
                             "preferredCategoryWidth": 20,
                             "maxMarginFactor": 30,
-                            "concatenateLabels": true,
+                            "concatenateLabels": false,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -1625,7 +1589,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
@@ -1646,7 +1609,6 @@
                             "secShowAxisTitle": true,
                             "secAxisStyle": "showUnitOnly",
                             "secColor": {"solid": {"color": "#949494"}},
-                            "secTitleText": "Add an Axis Title",
                             "secTitleFontSize": 8,
                             "secTitleFontFamily": "Arial"
                         }],
@@ -1663,7 +1625,7 @@
                             "labelPosition": "Above",
                             "labelOverflow": true,
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#949494"}},
                             "backgroundTransparency": 0
@@ -1685,11 +1647,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Line Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -1706,8 +1667,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -1743,7 +1703,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12,
@@ -1759,11 +1718,10 @@
                             "fontFamily": "Arial",
                             "preferredCategoryWidth": 20,
                             "maxMarginFactor": 30,
-                            "concatenateLabels": true,
+                            "concatenateLabels": false,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -1781,7 +1739,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showUnitOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": true,
@@ -1802,7 +1759,6 @@
                             "secShowAxisTitle": true,
                             "secAxisStyle": "showUnitOnly",
                             "secColor": {"solid": {"color": "#949494"}},
-                            "secTitleText": "Add an Axis Title",
                             "secTitleFontSize": 8,
                             "secTitleFontFamily": "Arial"
                         }],
@@ -1819,7 +1775,7 @@
                             "labelPosition": "InsideEnd",
                             "labelOverflow": true,
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#949494"}},
                             "backgroundTransparency": 0
@@ -1841,11 +1797,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Area Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -1862,8 +1817,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -1899,7 +1853,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12,
@@ -1913,11 +1866,10 @@
                             "fontFamily": "Arial",
                             "preferredCategoryWidth": 20,
                             "maxMarginFactor": 30,
-                            "concatenateLabels": true,
+                            "concatenateLabels": false,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -1935,7 +1887,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showUnitOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": true,
@@ -1957,7 +1908,7 @@
                             "labelPosition": "InsideEnd",
                             "labelOverflow": true,
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#949494"}},
                             "backgroundTransparency": 0
@@ -1984,11 +1935,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Stacked Area Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -2005,8 +1955,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -2042,7 +1991,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12,
@@ -2056,11 +2004,10 @@
                             "preferredCategoryWidth": 20,
                             "maxMarginFactor": 25,
                             "innerPadding": 15,
-                            "concatenateLabels": true,
+                            "concatenateLabels": false,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -2077,7 +2024,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
@@ -2098,7 +2044,6 @@
                             "secShowAxisTitle": true,
                             "secAxisStyle": "showTitleOnly",
                             "secTitleColor": {"solid": {"color": "#949494"}},
-                            "secTitleText": "Add an Axis Title",
                             "secTitleFontSize": 8,
                             "secTitleFontFamily": "Arial"							
                         }],
@@ -2116,7 +2061,7 @@
                             "labelPosition": "InsideEnd",
                             "labelOverflow": true,
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#949494"}},
                             "backgroundTransparency": 0
@@ -2138,11 +2083,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Line and Stacked Bar Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -2159,8 +2103,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -2194,9 +2137,8 @@
                 "general":  [{"responsive": true }],
                 "legend": [{
                             "show": true,
-                            "position": "Top",
+                            "position": "BottomCenter",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12,
@@ -2204,17 +2146,18 @@
                           }],
                 "categoryAxis": [{
                             "show": true,
-                            "color": {"solid": {"color": "#949494"}},
+                            "color": {"solid": {"color": "#000000"}},
                             "fontSize": 12,
+                            "bold": true,
+                            "titleBold": true,
                             "fontFamily": "Arial",
                             "preferredCategoryWidth": 20,
                             "maxMarginFactor": 25,
                             "innerPadding": 15,
-                            "concatenateLabels": true,
+                            "concatenateLabels": false,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
-                            "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
+                            "titleColor": {"solid": {"color": "#22285B"}},
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -2223,22 +2166,23 @@
                             "position": "Left",
                             "start": "Auto",
                             "end": "Auto",
-                            "labelColor": {"solid": {"color": "#949494"}},
+                            "labelColor": {"solid": {"color": "#000000"}},
                             "fontSize": 12,
                             "fontFamily": "Arial",
                             "labelPrecision": 0,
+                            "titleColor": {"solid": {"color": "#22285B"}},
                             "": 0,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
+                            "bold": true,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
                             "gridLineColor":  {"solid": {"color": "#949494"}},
                             "gridLineThickness": 1,
                             "gridlineStyle": "solid",
-                            "secShow": true,
+                            "secShow": false,
                             "alignZeros": true,
                             "secPosition": "Right",
                             "secStart": 0,
@@ -2249,28 +2193,28 @@
                             "secFontFamily": "Arial",
                             "sec": 0,
                             "secLabelPrecision": 0,
-                            "secShowAxisTitle": true,
-                            "secTitleText": "Add an Axis Title",
+                            "secShowAxisTitle": false,
                             "secAxisStyle": "showTitleOnly",
-                            "secTitleColor": {"solid": {"color": "#949494"}},
+                            "secTitleColor": {"solid": {"color": "#22285B"}},
                             "secTitleFontSize": 8,
                             "secTitleFontFamily": "Arial"							
                         }],
                 "zoom":[{
-                            "show":true,
+                            "show":false,
                             "showLabels":true,
                             "showTooltip":true
                             }],
                 "labels": [{
                             "show": true,
-                            "color": {"solid": {"color": "#ffffff"}},
+                            "color": {"solid": {"color": "#000000"}},
                             "": 1,
                             "labelPrecision": 0,
                             "labelOrientation": 1,
-                            "labelPosition": "InsideEnd",
+                            "labelPosition": "OutsideEnd",
                             "labelOverflow": true,
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
+                            "bold": true,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#949494"}},
                             "backgroundTransparency": 0
@@ -2289,11 +2233,11 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Line and Clustered Column Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
+                            "bold": true,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -2305,13 +2249,12 @@
                               }],														
                 "border": 	[{
                             "show": true,
-                            "color": {"solid": {"color": "#F5F4F0"}},
+                            "color": {"solid": {"color": "#22285B"}},
                             "radius": 5
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -2347,7 +2290,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12												
@@ -2365,7 +2307,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": true,
@@ -2387,7 +2328,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
@@ -2403,7 +2343,7 @@
                 "categoryLabels": [{
                             "show": true,
                             "fontColor": { "solid": { "color": "#000000"}},
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial",
                             "enableBackground": true,
                             "backgroundColor": { "solid": { "color": "#949494"}},
@@ -2418,11 +2358,10 @@
                             }],
                 "title":    [{
                             "show": true,
-                            "text": "Scatter Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -2439,8 +2378,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -2476,7 +2414,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12												
@@ -2496,11 +2433,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Pie Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],
                 "background": 	[{
@@ -2517,8 +2453,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -2554,9 +2489,10 @@
                             "show": true,
                             "position": "BottomCenter",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
-                            "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
+                            "legendColor": {"solid": {"color": "#ffffff"}},
+                            "color": {"solid": {"color": "#ffffff"}},
+                            "fontColor": {"solid": {"color": "#ffffff"}},
                             "fontSize": 12												
                           }],
                 "labels": [{
@@ -2574,11 +2510,11 @@
                             }],
                 "title":    [{
                             "show": true,
-                            "text": "Donut Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "alignment": "center",
-                            "fontSize": 10,
-                            "fontFamily": "Arial"
+                            "fontSize": 13,
+                            "bold": true,
+                            "fontFamily": "Arial Black"
                             }],
                 "background": 	[{
                             "show": true,
@@ -2594,8 +2530,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -2631,7 +2566,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12												
@@ -2652,11 +2586,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Treemap Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],
                 "background": 	[{
@@ -2668,8 +2601,7 @@
                               }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -2710,7 +2642,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12												
@@ -2726,7 +2657,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -2743,7 +2673,6 @@
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "color": {"solid": {"color": "#949494"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial",
                             "gridLineShow": false,
@@ -2758,7 +2687,7 @@
                             "labelPrecision": 0,
                             "labelOrientation": 1,
                             "labelPosition": "OutsideEnd",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial",
                             "enableBackground": true,
                             "backgroundColor": { "solid": { "color": "#949494"}},
@@ -2775,11 +2704,10 @@
                 }],
                 "title":    [{
                             "show": true,
-                            "text": "Waterfall Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -2796,8 +2724,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -2847,7 +2774,7 @@
                             "labelPrecision": 0,
                             "labelPosition": "InsideCenter",
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "position": "OutsideEnd"
                           }],
                 "percentBarLabel": [{
@@ -2858,11 +2785,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Funnel Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],
                 "background": 	[{
@@ -2879,8 +2805,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -2916,7 +2841,6 @@
                             "show": true,
                             "position": "Top",
                             "showTitle": true,
-                            "titleText": "Add a legend title",
                             "legendColor": {"solid": {"color": "#949494"}},
                             "fontFamily": "Arial",
                             "fontSize": 12											
@@ -2928,11 +2852,10 @@
                             "fontFamily": "Arial",
                             "preferredCategoryWidth": 20,
                             "maxMarginFactor": 30,
-                            "concatenateLabels": true,
+                            "concatenateLabels": false,
                             "showAxisTitle": true,
                             "axisStyle": "showTitleOnly",
                             "titleColor": {"solid": {"color": "#000000"}},
-                            "titleText": "Add an Axis Title",
                             "titleFontSize": 12,
                             "titleFontFamily": "Arial"
                           }],
@@ -2952,7 +2875,7 @@
                             "labelOverflow": true,
                             "labelOrientation": 1,
                             "fontFamily": "Arial",
-                            "fontSize": 7,
+                            "fontSize": 12,
                             "enableBackground": false,
                             "backgroundColor": {"solid": {"color": "#949494"}},
                             "backgroundTransparency": 0
@@ -2969,11 +2892,10 @@
                               }],
                 "title":    [{
                             "show": true,
-                            "text": "Ribbon Chart Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -2990,8 +2912,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -3051,11 +2972,10 @@
                           }],
                 "title":    [{
                             "show": true,
-                            "text": "Gauge Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -3072,8 +2992,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -3107,11 +3026,10 @@
                 "general":  [{"responsive": true }],
                 "title":    [{
                             "show": true,
-                            "text": "Python Visual Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -3128,8 +3046,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -3163,11 +3080,10 @@
                 "general":  [{"responsive": true }],
                 "title":    [{
                             "show": true,
-                            "text": "R Visual Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -3184,8 +3100,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -3238,11 +3153,10 @@
                             }],		
                 "title":    [{
                             "show": true,
-                            "text": "Key Influencers Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -3259,8 +3173,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -3337,11 +3250,10 @@
                 }],
                 "title": [{
                             "show": true,
-                            "text": "Decomposition Tree Title",
                             "fontColor": {"solid": {"color": "#FFFFFF"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 9,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -3358,8 +3270,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -3394,7 +3305,7 @@
                 "indicator":    [{
                             "indicatorDisplayUnits": 0,
                             "indicatorPrecision": 2,
-                            "fontSize": 9,
+                            "fontSize": 12,
                             "fontColor": {"solid": {"color": "#F5F4F0"}},
                             "fontFamily": "Arial",
                             "horizontalAlignment": "left",
@@ -3412,7 +3323,7 @@
                             "showDistance": true,
                             "goalFontColor": {"solid": {"color": "#000000"}},
                             "goalFontFamily": "Arial",
-                            "fontSize": 9,
+                            "fontSize": 12,
                             "distanceLabel": "Value",
                             "labelPrecision": 0,
                             "distanceFontFamily": "Arial",
@@ -3428,11 +3339,10 @@
                             }],
                 "title":    [{
                             "show": true,
-                            "text": "KPI Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#22285B"}},
                             "alignment": "center",
-                            "fontSize": 10,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],
                 "background": 	[{
@@ -3449,8 +3359,7 @@
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -3485,7 +3394,6 @@
                                     "show": false,
                                     "position": "Top",
                                     "showTitle": true,
-                                    "titleText": "Add a legend title",
                                     "legendColor": {"solid": {"color": "#949494"}},
                                     "fontFamily": "Arial",
                                     "fontSize": 10												
@@ -3493,7 +3401,7 @@
                         "categoryLabels": [{
                                     "show": true,
                                     "color": {"solid": {"color": "#949494"}},
-                                    "fontSize": 10,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial",
                                     "enableBackground": true,
                                     "backgroundColor": {"solid": {"color": "#ffffff"}},
@@ -3521,11 +3429,10 @@
                                   }],								  
                         "title":    [{
                                     "show": true,
-                                    "text": "Map Title",
                                     "fontColor": {"solid": {"color": "#ffffff"}},
                                     "background": {"solid": {"color": "#22285B"}},
                                     "alignment": "center",
-                                    "fontSize": 10,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial"
                                     }],
                         "background": 	[{
@@ -3548,8 +3455,7 @@
                                     }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -3595,11 +3501,10 @@
                                   }],
                         "title":    [{
                                     "show": true,
-                                    "text": "Filled Map Title",
                                     "fontColor": {"solid": {"color": "#ffffff"}},
                                     "background": {"solid": {"color": "#22285B"}},
                                     "alignment": "center",
-                                    "fontSize": 10,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial"
                                     }],
                         "background": 	[{
@@ -3622,8 +3527,7 @@
                                     }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
@@ -3670,11 +3574,10 @@
                         }],
                         "title":    [{
                                     "show": true,
-                                    "text": "Shape Map Title",
                                     "fontColor": {"solid": {"color": "#ffffff"}},
                                     "background": {"solid": {"color": "#22285B"}},
                                     "alignment": "center",
-                                    "fontSize": 10,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial"
                                     }],
                         "background": 	[{
@@ -3697,8 +3600,7 @@
                                     }],
                         "visualHeaderTooltip":[{
                                     "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                                    "text": "Add a tooltip text",
-                                    "fontSize": 11,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial Black",
                                     "background":{"solid":{"color":"#FFFFFF"}},
                                     "transparency": 30
@@ -3733,11 +3635,10 @@
                             "general":  [{"responsive": true }],
                             "title":    [{
                                         "show": true,
-                                        "text": "Map Title",
                                         "fontColor": {"solid": {"color": "#ffffff"}},
                                         "background": {"solid": {"color": "#171796"}},
                                         "alignment": "center",
-                                        "fontSize": 10,
+                                        "fontSize": 12,
                                         "fontFamily": "Arial"
                                         }],
                             "background": 	[{
@@ -3760,8 +3661,7 @@
                                         }],
                             "visualHeaderTooltip":[{
                                         "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                                        "text": "Add a tooltip text",
-                                        "fontSize": 11,
+                                        "fontSize": 12,
                                         "fontFamily": "Arial Black",
                                         "background":{"solid":{"color":"#FFFFFF"}},
                                         "transparency": 30
@@ -3797,41 +3697,37 @@
                                     ,
                                     {
                                     "$id": "default",
-                                    "text": "Button Text",
                                     "fontColor": {"solid": {"color": "#808080"}},
                                     "padding": 3,
                                     "horizontalAlignment": "center",
-                                    "fontSize": 10,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial"
                                     }
                                     ,
                                     {
                                     "$id": "hover",
-                                    "text": "Hover button Text",
                                     "fontColor": {"solid": {"color": "#808080"}},
                                     "padding": 3,
                                     "horizontalAlignment": "center",
-                                    "fontSize": 10,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial"
                                     }
                                     ,
                                     {
                                     "$id": "selected",
-                                    "text": "Press button Text",
                                     "fontColor": {"solid": {"color": "#808080"}},
                                     "padding": 3,
                                     "horizontalAlignment": "center",
-                                    "fontSize": 10,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial"
                                     }
                                     ,
                                     {
                                     "$id": "disabled",
-                                    "text": "Disabled button Text",
                                     "fontColor": {"solid": {"color": "#808080"}},
                                     "padding": 3,
                                     "horizontalAlignment": "center",
-                                    "fontSize": 10,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial"								
                                     }],
                         "icon": [{
@@ -3925,7 +3821,6 @@
                                     }],
                         "title":    [{
                                     "show": false,
-                                    "text": "Button Title",
                                     "fontColor": {"solid": {"color": "#ffffff"}},
                                     "background": {"solid": {"color": "#22285B"}},
                                     "alignment": "center",
@@ -3945,8 +3840,7 @@
                                     }],
                         "visualHeaderTooltip":[{
                                     "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                                    "text": "Add a tooltip text",
-                                    "fontSize": 11,
+                                    "fontSize": 12,
                                     "fontFamily": "Arial Black",
                                     "background":{"solid":{"color":"#FFFFFF"}},
                                     "transparency": 30
@@ -3977,10 +3871,10 @@
         "slicer":
             {"*":
                 {
-                "general":  [{
-                            "outlineColor": {"solid": {"color": "#909090"}},			
+                "general":  [{		
                             "outlineWeight": 1,
                             "orientation": 0,
+                            "style":"Dropdown",
                             "responsive": false															
                             }],
                 "selection": [{
@@ -3998,12 +3892,13 @@
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "outline": "None",
                             "textSize": 12,
+                            "bold": true,
                             "fontFamily": "Arial"
                             }],
                 "numericInputStyle":[{
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "backgroundColor": {"solid": {"color": "#B7B7B7"}},
-                            "fontSize": 9,
+                            "fontSize": 12,
                             "fontFamily": "Arial"
                             }],
                 "slider": 	[{ 
@@ -4016,20 +3911,22 @@
                             "textSize": 8
                             }],
                 "items":    [{
-                            "fontColor": {"solid": {"color": "#ffffff"}},
-                            "background":{"solid": {"color": "#22285B"}},
-                            "backgroundColor": {"solid": {"color": "#22285B"}},
+                            "fontColor": {"solid": {"color": "#000000"}},
+                            "background":{"solid": {"color": "#ACC2E5"}},
+                            "backgroundColor": {"solid": {"color": "#ACC2E5"}},
                             "outline": "Frame",
                             "textSize": 12,
+                            "bold": true,
+                            "titlebold":true,
                             "fontFamily": "Arial"
                             }],
                 "title":    [{
                             "show": false,
-                            "text": "Slicer Title",
                             "fontColor": {"solid": {"color": "#ffffff"}},
                             "background": {"solid": {"color": "#7A8C97"}},
                             "alignment": "center",
-                            "fontSize": 9,
+                            "fontSize": 12,
+                            "bold": true,
                             "fontFamily": "Arial"
                             }],														
                 "background": 	[{
@@ -4041,13 +3938,12 @@
                               }],														
                 "border": 	[{
                             "show": false,
-                            "color": {"solid": {"color": "#F5F4F0"}},
+                            "color": {"solid": {"color": "#22285B"}},
                             "radius": 5
                             }],
                 "visualHeaderTooltip":[{
                             "titleFontColor":{"solid":{"color":"#E8E8E8"}},
-                            "text": "Add a tooltip text",
-                            "fontSize": 11,
+                            "fontSize": 12,
                             "fontFamily": "Arial Black",
                             "background":{"solid":{"color":"#FFFFFF"}},
                             "transparency": 30
